@@ -1,0 +1,16 @@
+C:\Users\irani\OneDrive\Documentos\Demos .net\bin\Debug\net5.0\Demos .net.exe
+C:\Users\irani\OneDrive\Documentos\Demos .net\bin\Debug\net5.0\Demos .net.deps.json
+C:\Users\irani\OneDrive\Documentos\Demos .net\bin\Debug\net5.0\Demos .net.runtimeconfig.json
+C:\Users\irani\OneDrive\Documentos\Demos .net\bin\Debug\net5.0\Demos .net.runtimeconfig.dev.json
+C:\Users\irani\OneDrive\Documentos\Demos .net\bin\Debug\net5.0\Demos .net.dll
+C:\Users\irani\OneDrive\Documentos\Demos .net\bin\Debug\net5.0\ref\Demos .net.dll
+C:\Users\irani\OneDrive\Documentos\Demos .net\bin\Debug\net5.0\Demos .net.pdb
+C:\Users\irani\OneDrive\Documentos\Demos .net\obj\Debug\net5.0\Demos .net.csproj.AssemblyReference.cache
+C:\Users\irani\OneDrive\Documentos\Demos .net\obj\Debug\net5.0\Demos .net.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irani\OneDrive\Documentos\Demos .net\obj\Debug\net5.0\Demos .net.AssemblyInfoInputs.cache
+C:\Users\irani\OneDrive\Documentos\Demos .net\obj\Debug\net5.0\Demos .net.AssemblyInfo.cs
+C:\Users\irani\OneDrive\Documentos\Demos .net\obj\Debug\net5.0\Demos .net.csproj.CoreCompileInputs.cache
+C:\Users\irani\OneDrive\Documentos\Demos .net\obj\Debug\net5.0\Demos .net.dll
+C:\Users\irani\OneDrive\Documentos\Demos .net\obj\Debug\net5.0\ref\Demos .net.dll
+C:\Users\irani\OneDrive\Documentos\Demos .net\obj\Debug\net5.0\Demos .net.pdb
+C:\Users\irani\OneDrive\Documentos\Demos .net\obj\Debug\net5.0\Demos .net.genruntimeconfig.cache
