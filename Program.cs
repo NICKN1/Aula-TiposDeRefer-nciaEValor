@@ -2,15 +2,7 @@
 
 class Program
 {
-    //criasse um novo método
-    //recebe uma variável de nome Pessoa pessoa1 (pode ser qualquer um, pois ele vai copiar os dados do Main)
-    //cria uma varíavel para o novo nome, criando string nomeNovo
-    static void TrocarNome(Pessoa pessoa1, string nomeNovo)
-    {
-        //ao receber o pessoa1, avisa que o atributo nome será o mesmo que nomeNovo
-        pessoa1.nomePessoa = nomeNovo;
-    }
-    public static void Main()
+    static void Demo1()
     { 
         //Declara a classe
         //pessoa1 é o objeto criado
@@ -48,4 +40,46 @@ class Program
         O nome da pessoa4: {pessoa4.nomePessoa}
         ");
     }
+    
+    //criasse um novo método
+    //recebe uma variável de nome Pessoa pessoa1 (pode ser qualquer um, pois ele vai copiar os dados do Main)
+    //cria uma varíavel para o novo nome, criando string nomeNovo
+    static void TrocarNome(Pessoa pessoa1, string nomeNovo)
+    {
+        //ao receber o pessoa1, avisa que o atributo nome será o mesmo que nomeNovo
+        pessoa1.nomePessoa = nomeNovo;
+    }
+
+
+    /*Criando o novo metodo de Trocar Nome usando as struck
+    O método TrocarNomeStruckt não pode ser void, pois ele está mudando o nome de uma cópia
+    Sua funcionalidade fica nula sendo void. Ele tem que retornar uma Struct para conseguir com 
+    que a Struct entenda como novo parâmetro, e não uma cópia.  
+    */
+    static StructPessoa TrocarNomeStruck(StructPessoa pessoa1, string nomeNovo)
+    {
+        pessoa1.nomePessoa = nomeNovo;
+        return pessoa1;
+    }
+    //Usando Struct 
+    public static void Main()
+    {
+        StructPessoa pessoa1 = new StructPessoa
+        {
+            documentoPessoa = 1234,
+            nomePessoa = "João",
+            idadePessoa = 24
+        };
+
+        var pessoa2 = pessoa1;
+
+        //Para haver a alteração, tenho que informar qual variável deve receber a mudança
+        pessoa1 = TrocarNomeStruck(pessoa1, "Pedro");
+
+        WriteLine($@"
+        O nome da pessoa 1 é : {pessoa1.nomePessoa}
+        O nome da pessoa 2 é : {pessoa2.nomePessoa}
+        ");
+    }
+    
 }
