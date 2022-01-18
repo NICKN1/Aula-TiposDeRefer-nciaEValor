@@ -2,6 +2,48 @@
 
 class Program
 {
+    /*Criando o novo metodo de Trocar Nome usando as struck
+    O método TrocarNomeStruckt não pode ser void, pois ele está mudando o nome de uma cópia
+    Sua funcionalidade fica nula sendo void. Ele tem que retornar uma Struct para conseguir com 
+    que a Struct entenda como novo parâmetro, e não uma cópia.  
+    */
+    static StructPessoa TrocarNomeStruck(StructPessoa pessoa1, string nomeNovo)
+    {
+        pessoa1.nomePessoa = nomeNovo;
+        return pessoa1;
+    }
+    static void Demo2()
+    {
+    //Usando Struct 
+
+        StructPessoa pessoa1 = new StructPessoa
+        {
+            documentoPessoa = 1234,
+            nomePessoa = "João",
+            idadePessoa = 24
+        };
+
+        var pessoa2 = pessoa1;
+
+        //Para haver a alteração, tenho que informar qual variável deve receber a mudança
+        pessoa1 = TrocarNomeStruck(pessoa1, "Pedro");
+
+        WriteLine($@"
+        O nome da pessoa 1 é : {pessoa1.nomePessoa}
+        O nome da pessoa 2 é : {pessoa2.nomePessoa}
+        ");
+    }
+    
+    /* ##################################################################################### */
+
+    //criasse um novo método
+    //recebe uma variável de nome Pessoa pessoa1 (pode ser qualquer um, pois ele vai copiar os dados do Main)
+    //cria uma varíavel para o novo nome, criando string nomeNovo
+    static void TrocarNome(Pessoa pessoa1, string nomeNovo)
+    {
+        //ao receber o pessoa1, avisa que o atributo nome será o mesmo que nomeNovo
+        pessoa1.nomePessoa = nomeNovo;
+    }
     static void Demo1()
     { 
         //Declara a classe
@@ -39,47 +81,28 @@ class Program
         O nome da pessoa3: {pessoa3.nomePessoa}
         O nome da pessoa4: {pessoa4.nomePessoa}
         ");
-    }
     
-    //criasse um novo método
-    //recebe uma variável de nome Pessoa pessoa1 (pode ser qualquer um, pois ele vai copiar os dados do Main)
-    //cria uma varíavel para o novo nome, criando string nomeNovo
-    static void TrocarNome(Pessoa pessoa1, string nomeNovo)
-    {
-        //ao receber o pessoa1, avisa que o atributo nome será o mesmo que nomeNovo
-        pessoa1.nomePessoa = nomeNovo;
     }
 
-
-    /*Criando o novo metodo de Trocar Nome usando as struck
-    O método TrocarNomeStruckt não pode ser void, pois ele está mudando o nome de uma cópia
-    Sua funcionalidade fica nula sendo void. Ele tem que retornar uma Struct para conseguir com 
-    que a Struct entenda como novo parâmetro, e não uma cópia.  
-    */
-    static StructPessoa TrocarNomeStruck(StructPessoa pessoa1, string nomeNovo)
-    {
-        pessoa1.nomePessoa = nomeNovo;
-        return pessoa1;
-    }
-    //Usando Struct 
+    //Criar variável tipo string, e criar um método que altere o valor no terminal
     public static void Main()
     {
-        StructPessoa pessoa1 = new StructPessoa
-        {
-            documentoPessoa = 1234,
-            nomePessoa = "João",
-            idadePessoa = 24
-        };
+        //Criei a variável com um valor
+        string nome = "João";
+        
+        WriteLine($@"O nome registrado atual é: {nome}
+        Qual nome você deseja registrar?");
+        //indico que a variável vai herdar o valor digitado pelo usuário
+        nome = ReadLine();
 
-        var pessoa2 = pessoa1;
+        WriteLine($"O nome registrado agora é: {nome}");
 
-        //Para haver a alteração, tenho que informar qual variável deve receber a mudança
-        pessoa1 = TrocarNomeStruck(pessoa1, "Pedro");
-
-        WriteLine($@"
-        O nome da pessoa 1 é : {pessoa1.nomePessoa}
-        O nome da pessoa 2 é : {pessoa2.nomePessoa}
-        ");
     }
-    
 }
+
+
+    
+    
+    
+    
+
