@@ -2,6 +2,19 @@
 
 class Program
 {
+     //Criar variável tipo string, e criar um método que altere o valor no terminal
+    static void Demo3(){
+        //Criei a variável com um valor
+        string nome = "João";
+        
+        WriteLine($@"O nome registrado atual é: {nome}
+        Qual nome você deseja registrar?");
+        //indico que a variável vai herdar o valor digitado pelo usuário
+        nome = ReadLine();
+
+        WriteLine($"O nome registrado agora é: {nome}");
+    }
+
     /*Criando o novo metodo de Trocar Nome usando as struck
     O método TrocarNomeStruckt não pode ser void, pois ele está mudando o nome de uma cópia
     Sua funcionalidade fica nula sendo void. Ele tem que retornar uma Struct para conseguir com 
@@ -83,20 +96,23 @@ class Program
         ");
     
     }
-
-    //Criar variável tipo string, e criar um método que altere o valor no terminal
+    
+    //Método para adicionar +1 em cada valor dentro do array, transfomando-os assim pares em ímpares
+    static void MudarParaImpar(int[] pares){
+        for (int i = 0; i < pares.Length; i++)
+        {
+            pares[i] = pares[i] + 1;
+        }
+    }
     public static void Main()
     {
-        //Criei a variável com um valor
-        string nome = "João";
-        
-        WriteLine($@"O nome registrado atual é: {nome}
-        Qual nome você deseja registrar?");
-        //indico que a variável vai herdar o valor digitado pelo usuário
-        nome = ReadLine();
+        //Criando um array
+        int[] pares = new int[]{0,2,4,6,8};
 
-        WriteLine($"O nome registrado agora é: {nome}");
+        MudarParaImpar(pares);
 
+        //{string.join(",", array)} <<<< Comando para mostrar os valores do array no Write.
+        WriteLine($"Os ímpares {string.Join(",", pares)}");
     }
 }
 
