@@ -2,6 +2,23 @@
 
 class Program
 {
+    //Método para adicionar +1 em cada valor dentro do array, transfomando-os assim pares em ímpares
+    static void MudarParaImpar(int[] pares){
+        for (int i = 0; i < pares.Length; i++)
+        {
+            pares[i] = pares[i] + 1;
+        }
+    }
+    static void Demo4(){
+        //Criando um array
+        int[] pares = new int[]{0,2,4,6,8};
+
+        MudarParaImpar(pares);
+
+        //{string.join(",", array)} <<<< Comando para mostrar os valores do array no Write.
+        WriteLine($"Os ímpares {string.Join(",", pares)}");
+    }
+
      //Criar variável tipo string, e criar um método que altere o valor no terminal
     static void Demo3(){
         //Criei a variável com um valor
@@ -97,22 +114,34 @@ class Program
     
     }
     
-    //Método para adicionar +1 em cada valor dentro do array, transfomando-os assim pares em ímpares
-    static void MudarParaImpar(int[] pares){
-        for (int i = 0; i < pares.Length; i++)
+    //Método para achar o numero dentro do array
+    static int EncontraNumero(int[] numeros, int numero){
+        for (int i = 0; i < numeros.Length; i++)
         {
-            pares[i] = pares[i] + 1;
+            if (numeros[i] == numero)
+            return i;
         }
+        return -1;
     }
+    
     public static void Main()
-    {
-        //Criando um array
-        int[] pares = new int[]{0,2,4,6,8};
+    {   //Crio o array que guarda os valores
+        int[] numeros = new int[]{0,2,4,6,8,10};
 
-        MudarParaImpar(pares);
+        WriteLine("Digite o numero a ser encontrado.");
+        //Solicito e leio o valor do usuário. Ainda converto de string para int usando "int.Parse"
+        var numero = int.Parse((ReadLine()));
+        var idxNumeroEncontrado = EncontraNumero(numeros, numero);
 
-        //{string.join(",", array)} <<<< Comando para mostrar os valores do array no Write.
-        WriteLine($"Os ímpares {string.Join(",", pares)}");
+        //Condição para o retorno da solicitação do Usuário
+        if( idxNumeroEncontrado >= 0)
+        {
+            WriteLine($"O número encontrado está na posição: {idxNumeroEncontrado}");
+        }
+        else
+        { 
+            WriteLine("O número não faz parte da array.");
+        }
     }
 }
 
