@@ -1,7 +1,38 @@
 ﻿using static System.Console;
 
+using System.Collections.Generic;
+
 class Program
-{
+{   
+    //Método para achar o numero dentro do array
+    static int EncontraNumero(int[] numeros, int numero){
+        for (int i = 0; i < numeros.Length; i++)
+        {
+            if (numeros[i] == numero)
+            return i;
+        }
+        return -1;
+    }
+    static void Demo5(){
+        //Crio o array que guarda os valores
+        int[] numeros = new int[]{0,2,4,6,8,10};
+
+        WriteLine("Digite o numero a ser encontrado.");
+        //Solicito e leio o valor do usuário. Ainda converto de string para int usando "int.Parse"
+        var numero = int.Parse((ReadLine()));
+        var idxNumeroEncontrado = EncontraNumero(numeros, numero);
+
+        //Condição para o retorno da solicitação do Usuário
+        if( idxNumeroEncontrado >= 0)
+        {
+            WriteLine($"O número encontrado está na posição: {idxNumeroEncontrado}");
+        }
+        else
+        { 
+            WriteLine("O número não faz parte da array.");
+        }
+    }
+    
     //Método para adicionar +1 em cada valor dentro do array, transfomando-os assim pares em ímpares
     static void MudarParaImpar(int[] pares){
         for (int i = 0; i < pares.Length; i++)
@@ -114,33 +145,42 @@ class Program
     
     }
     
-    //Método para achar o numero dentro do array
-    static int EncontraNumero(int[] numeros, int numero){
-        for (int i = 0; i < numeros.Length; i++)
+    static bool LocalizaPessoa(List<Pessoa> pessoas, Pessoa pessoa)
+    {
+        foreach (var item in pessoas)
         {
-            if (numeros[i] == numero)
-            return i;
+            if (item.nomePessoa == pessoa.nomePessoa)
+            {
+                return true;
+            }
+            
         }
-        return -1;
+        return false;
     }
     
     public static void Main()
-    {   //Crio o array que guarda os valores
-        int[] numeros = new int[]{0,2,4,6,8,10};
-
-        WriteLine("Digite o numero a ser encontrado.");
-        //Solicito e leio o valor do usuário. Ainda converto de string para int usando "int.Parse"
-        var numero = int.Parse((ReadLine()));
-        var idxNumeroEncontrado = EncontraNumero(numeros, numero);
-
-        //Condição para o retorno da solicitação do Usuário
-        if( idxNumeroEncontrado >= 0)
+    {
+        List<Pessoa> pessoas = new List<Pessoa>()
         {
-            WriteLine($"O número encontrado está na posição: {idxNumeroEncontrado}");
+            new Pessoa(){nomePessoa = "Pedro"},
+            new Pessoa(){nomePessoa = "João"},
+            new Pessoa(){nomePessoa = "Maria"},
+            new Pessoa(){nomePessoa = "Fátima"},
+            new Pessoa(){nomePessoa = "Cícero"}
+        };
+
+        WriteLine("Digite o nome da pessoa a ser localizada: ");
+        var nome = ReadLine();   
+        var pessoa = new Pessoa{nomePessoa = nome};
+        var encontrado = LocalizaPessoa(pessoas,pessoa);
+
+        if(encontrado)
+        {
+            WriteLine("Pessoa localizada!");
         }
-        else
-        { 
-            WriteLine("O número não faz parte da array.");
+        else 
+        {
+            WriteLine("Pessoa não localizada!");
         }
     }
 }
