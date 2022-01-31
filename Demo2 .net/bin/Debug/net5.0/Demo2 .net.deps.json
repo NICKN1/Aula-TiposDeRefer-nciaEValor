@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Demo2 .net/1.0.0": {
+        "runtime": {
+          "Demo2 .net.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Demo2 .net/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
