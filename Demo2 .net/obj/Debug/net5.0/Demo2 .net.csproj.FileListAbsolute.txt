@@ -14,3 +14,19 @@ C:\Users\irani\OneDrive\Documentos\Demo2 .net\obj\Debug\net5.0\Demo2 .net.dll
 C:\Users\irani\OneDrive\Documentos\Demo2 .net\obj\Debug\net5.0\ref\Demo2 .net.dll
 C:\Users\irani\OneDrive\Documentos\Demo2 .net\obj\Debug\net5.0\Demo2 .net.pdb
 C:\Users\irani\OneDrive\Documentos\Demo2 .net\obj\Debug\net5.0\Demo2 .net.genruntimeconfig.cache
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\obj\Debug\net5.0\Demo2 .net.csproj.AssemblyReference.cache
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\obj\Debug\net5.0\Demo2 .net.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\obj\Debug\net5.0\Demo2 .net.AssemblyInfoInputs.cache
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\obj\Debug\net5.0\Demo2 .net.AssemblyInfo.cs
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\obj\Debug\net5.0\Demo2 .net.csproj.CoreCompileInputs.cache
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\obj\Debug\net5.0\Demo2 .net.dll
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\obj\Debug\net5.0\ref\Demo2 .net.dll
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\obj\Debug\net5.0\Demo2 .net.pdb
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\bin\Debug\net5.0\Demo2 .net.exe
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\bin\Debug\net5.0\Demo2 .net.deps.json
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\bin\Debug\net5.0\Demo2 .net.runtimeconfig.json
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\bin\Debug\net5.0\Demo2 .net.runtimeconfig.dev.json
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\bin\Debug\net5.0\Demo2 .net.dll
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\bin\Debug\net5.0\ref\Demo2 .net.dll
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\bin\Debug\net5.0\Demo2 .net.pdb
+C:\Users\irani\OneDrive\Documentos\Demos .net\Demo2 .net\obj\Debug\net5.0\Demo2 .net.genruntimeconfig.cache

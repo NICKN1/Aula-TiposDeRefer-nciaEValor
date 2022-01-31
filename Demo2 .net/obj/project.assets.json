@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\irani\\OneDrive\\Documentos\\Demo2 .net\\Demo2 .net.csproj",
+      "projectUniqueName": "C:\\Users\\irani\\OneDrive\\Documentos\\Demos .net\\Demo2 .net\\Demo2 .net.csproj",
       "projectName": "Demo2 .net",
-      "projectPath": "c:\\Users\\irani\\OneDrive\\Documentos\\Demo2 .net\\Demo2 .net.csproj",
+      "projectPath": "C:\\Users\\irani\\OneDrive\\Documentos\\Demos .net\\Demo2 .net\\Demo2 .net.csproj",
       "packagesPath": "C:\\Users\\irani\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\irani\\OneDrive\\Documentos\\Demo2 .net\\obj\\",
+      "outputPath": "C:\\Users\\irani\\OneDrive\\Documentos\\Demos .net\\Demo2 .net\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Visual 2019 Componentes\\NuGetPackages"
