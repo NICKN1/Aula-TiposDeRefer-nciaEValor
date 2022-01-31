@@ -144,7 +144,7 @@ class Program
         ");
     
     }
-    
+    //Método para encontrar um item em uma lista. No caso na classe Pessoa
     static bool LocalizaPessoa(List<Pessoa> pessoas, Pessoa pessoa)
     {
         foreach (var item in pessoas)
@@ -152,7 +152,21 @@ class Program
             if (item.nomePessoa == pessoa.nomePessoa)
             {
                 return true;
-            }
+            } 
+            
+        }
+        return false;
+    }
+
+        static bool LocalizaPessoa(List<StructPessoa> pessoas, StructPessoa pessoa)
+    {
+        foreach (var item in pessoas)
+        {
+            //Usa-se o operador Equals, tem o tratamento correto, pois struct é by Value
+            if (item.Equals(pessoa))
+            {
+                return true;
+            } 
             
         }
         return false;
@@ -160,18 +174,18 @@ class Program
     
     public static void Main()
     {
-        List<Pessoa> pessoas = new List<Pessoa>()
+        List<StructPessoa> pessoas = new List<StructPessoa>()
         {
-            new Pessoa(){nomePessoa = "Pedro"},
-            new Pessoa(){nomePessoa = "João"},
-            new Pessoa(){nomePessoa = "Maria"},
-            new Pessoa(){nomePessoa = "Fátima"},
-            new Pessoa(){nomePessoa = "Cícero"}
+            new StructPessoa(){nomePessoa = "Pedro"},
+            new StructPessoa(){nomePessoa = "João"},
+            new StructPessoa(){nomePessoa = "Maria"},
+            new StructPessoa(){nomePessoa = "Fátima"},
+            new StructPessoa(){nomePessoa = "Cícero"}
         };
 
         WriteLine("Digite o nome da pessoa a ser localizada: ");
         var nome = ReadLine();   
-        var pessoa = new Pessoa{nomePessoa = nome};
+        var pessoa = new StructPessoa{nomePessoa = nome};
         var encontrado = LocalizaPessoa(pessoas,pessoa);
 
         if(encontrado)
