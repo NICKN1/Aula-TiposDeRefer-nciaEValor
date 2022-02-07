@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using static System.Console;
 
 namespace Demo2_.net
@@ -20,22 +21,8 @@ namespace Demo2_.net
             Adcionar20(ref a); 
             WriteLine($"O valor de a é: {a}");
         }
-        static void Adcionar20(ref int a){
-            a += 20;
-        }
 
-        //Cria método para trocar os nomes da lista
-        static void Trocarnomes(string[] nomes, string nome, string nomeNovo){
-            for (int i = 0; i < nomes.Length; i++)
-            {
-                if(nomes[i] == nome)
-                {
-                    nomes[i] = nomeNovo;
-                }
-            }
-        }
-        static void Main(string[] args)
-        {
+        static void Demo2(){
             //Cria um array de strings
             var nomes = new string[]{"João", "Maria", "Pedro", "Jonas", "Flávia"};
             
@@ -53,5 +40,44 @@ namespace Demo2_.net
             WriteLine($@"A lista de nomes atualizada é: 
             {string.Join(", \n", nomes)}");
         }
-    }
+        static void Adcionar20(ref int a){
+            a += 20;
+        }
+
+        //Cria método para trocar os nomes da lista
+        static void Trocarnomes(string[] nomes, string nome, string nomeNovo){
+            for (int i = 0; i < nomes.Length; i++)
+            {
+                if(nomes[i] == nome)
+                {
+                    nomes[i] = nomeNovo;
+                }
+            }
+        }
+
+        
+        static void Main(string[] args)
+        {
+         var nomes = new string[]{"José", "Maria", "Pedro", "João", "Paula", "Natalia"};
+         WriteLine($@"A lista de nomes é:
+                {string.Join(", \n",nomes)}"); 
+
+            WriteLine("Digite o nome a ser substituído");
+            var nome = ReadLine();
+            WriteLine("Digite o nome novo: ");
+            var nomeNovo = ReadLine();
+
+            Trocarnomes(nomes, nome, nomeNovo);
+
+           WriteLine($@"A lista de nomes Alterados é: 
+                {string.Join(", \n",nomes)}"); 
+
+               
+            
+        }   
+     }
 }
+
+   
+    
+
